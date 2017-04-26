@@ -25,8 +25,10 @@ Note that you don't have to put quotes around the commit message
 ```
 go get -u github.com/JoshNavi/lazygit
 cd lazygit
-go build
+go install
 ```
+
+*Make sure that $GOPATH/bin is added to your PATH environment variable*
 
 Should work with most versions of go
 
