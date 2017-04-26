@@ -38,6 +38,20 @@ func main() {
 	}
 	log.Printf("git commit -m %s", argsString)
 
+	cmd = exec.Command("git", "push")
+	err = cmd.Run()
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf("git push")
+
+	cmd = exec.Command("gl")
+	log.Printf("gl")
+	err = cmd.Run()
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	fmt.Printf("Major success")
 
 	return
