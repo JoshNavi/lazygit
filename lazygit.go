@@ -35,7 +35,7 @@ func main() {
 	log.Printf("git commit -m \"%s\"", argsString)
 	err = cmd.Run()
 	if err != nil {
-		log.Fatal("Check if you have changes to commit. Error: %s", err)
+		log.Fatalf("Check if you have changes to commit. Error: %s", err)
 	}
 
 	cmd = exec.Command("git", "push")
