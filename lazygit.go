@@ -36,7 +36,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Printf("git add -u")
+	log.Printf("git commit -m %s", argsString)
 
 	fmt.Printf("Major success")
 
