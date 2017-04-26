@@ -45,8 +45,8 @@ func main() {
 	}
 	log.Printf("git push")
 
-	cmd = exec.Command("gl")
-	log.Printf("gl")
+	cmd = exec.Command("git", "log")
+	log.Printf("git log")
 	err = cmd.Run()
 	if err != nil {
 		log.Fatal(err)
