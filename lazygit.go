@@ -18,32 +18,32 @@ func main() {
 	}
 
 	cmd := exec.Command("git", "add", "-A")
+	log.Printf("git add -A")
 	err := cmd.Run()
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Printf("git add -A")
 
 	cmd = exec.Command("git", "add", "-u")
+	log.Printf("git add -u")
 	err = cmd.Run()
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Printf("git add -u")
 
 	cmd = exec.Command("git", "commit", "-m", argsString)
+	log.Printf("git commit -m \"%s\"", argsString)
 	err = cmd.Run()
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Printf("git commit -m \"%s\"", argsString)
 
 	cmd = exec.Command("git", "push")
+	log.Printf("git push")
 	err = cmd.Run()
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Printf("git push")
 
 	fmt.Printf("Major success")
 	return
