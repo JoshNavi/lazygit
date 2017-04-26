@@ -19,20 +19,15 @@ It's really just `git-go COMMITMSG`. Note that you don't have to put quotes arou
 ```
 lazygit Commit message
 ```
-<!--
-If you intend to use quotes, you need to escape them using `\`.
-
-```
-git-go I\'m done coding
-```-->
 
 ### Installation
 
 ```
-go get github.com/JoshNavi/lazygit
-go install
+go get -u github.com/JoshNavi/lazygit
+cd lazygit
+go build
 ```
 
 ### Credit
 
-This is just a golang port of @gka's git-go nodejs script.
+This is just a golang port of @gka's [git-go nodejs script](https://github.com/gka/git-go).
