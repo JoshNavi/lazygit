@@ -14,11 +14,11 @@ It is a dangerous practice, but it saves a lot of time. Also it encourages [comm
 
 ### Usage
 
-It's really just `git-go COMMITMSG`. Note that you don't have to put quotes around the commit message.
+```
+lazygit Your commit message
+```
 
-```
-lazygit Commit message
-```
+Note that you don't have to put quotes around the commit message
 
 ### Installation
 
@@ -27,6 +27,8 @@ go get -u github.com/JoshNavi/lazygit
 cd lazygit
 go build
 ```
+
+Should work with most versions of go
 
 ### Credit
 
