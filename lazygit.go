@@ -52,6 +52,6 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Printf("All file successfully committed and pushed")
+	fmt.Printf("All files successfully committed and pushed")
 	return
 }
