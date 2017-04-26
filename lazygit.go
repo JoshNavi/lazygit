@@ -35,6 +35,7 @@ func main() {
 	log.Printf("git commit -m \"%s\"", argsString)
 	err = cmd.Run()
 	if err != nil {
+		fmt.Printf("Error pls %s", err.Error())
 		log.Fatal(err)
 	}
 
